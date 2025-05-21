@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentWork - Tələbələr üçün iş platforması</title>
+    <link rel="stylesheet" href="style11.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>StudentWork</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Ana səhifə</a></li>
+                    <li><a href="#about">Haqqımızda</a></li>
+                    <li><a href="#services">Xidmətlər</a></li>
+                    <li><a href="#contact">Əlaqə</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button id="loginBtn" class="btn btn-outline">Giriş</button>
+                <button id="registerBtn" class="btn btn-primary">Qeydiyyat</button>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Sənin vaxtına uyğun iş, onların ehtiyacına uyğun iş gücü</h2>
+                <p>StudentWork platforması tələbələrə dərs cədvəllərinə uyğun iş tapmağa və şirkətlərə uyğun tələbə namizədləri tapmağa kömək edir.</p>
+                <div class="hero-buttons">
+                    <button id="studentRegisterBtn" class="btn btn-primary btn-lg">Tələbə kimi qeydiyyat</button>
+                    <button id="companyRegisterBtn" class="btn btn-secondary btn-lg">Şirkət kimi qeydiyyat</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="/api/placeholder/600/400" alt="Tələbələr və şirkətlər üçün platform">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Nə edirik?</h2>
+            <div class="about-grid">
+                <div class="about-item">
+                    <div class="icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>Tələbələr üçün</h3>
+                    <p>Dərs cədvəlinə uyğun iş imkanları tapın. Təcrübə qazanın və təhsil xərclərinizi qarşılayın.</p>
+                </div>
+                <div class="about-item">
+                    <div class="icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Şirkətlər üçün</h3>
+                    <p>Çevik qrafiklə işləyə biləcək istedadlı tələbələr tapın və gələcək kadrlarınızı yetişdirin.</p>
+                </div>
+                <div class="about-item">
+                    <div class="icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Vaxt uyğunluğu</h3>
+                    <p>Dərs saatları və iş vaxtları avtomatik uyğunlaşdırılır, heç bir konflikt olmadan.</p>
+                </div>
+                <div class="about-item">
+                    <div class="icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Əlaqə və təklif</h3>
+                    <p>Uyğun namizədlər və vakansiyalar haqqında avtomatik bildirişlər.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Xidmətlərimiz</h2>
+            <div class="service-tabs">
+                <button class="tab-btn active" data-tab="students">Tələbələr üçün</button>
+                <button class="tab-btn" data-tab="companies">Şirkətlər üçün</button>
+            </div>
+            <div class="tab-content">
+                <div class="tab-pane active" id="students-tab">
+                    <div class="service-list">
+                        <div class="service-item">
+                            <i class="fas fa-search"></i>
+                            <h3>Dərs cədvəlinə uyğun iş axtarışı</h3>
+                            <p>Dərs saatlarınıza uyğun olan iş vakansiyalarını avtomatik tapın</p>
+                        </div>
+                        <div class="service-item">
+                            <i class="fas fa-file-alt"></i>
+                            <h3>CV və portfolio yaradılması</h3>
+                            <p>Təcrübənizi və bacarıqlarınızı göstərmək üçün professional CV yaradın</p>
+                        </div>
+                        <div class="service-item">
+                            <i class="fas fa-bell"></i>
+                            <h3>Bildiriş sistemi</h3>
+                            <p>Sizin profilinizə uyğun vakansiyalar haqqında dərhal xəbərdar olun</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="companies-tab">
+                    <div class="service-list">
+                        <div class="service-item">
+                            <i class="fas fa-users"></i>
+                            <h3>İstedadlı namizədlər</h3>
+                            <p>Bilik və bacarıqlara görə namizədlərin avtomatik filtrlənməsi</p>
+                        </div>
+                        <div class="service-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <h3>Vaxt uyğunluğu</h3>
+                            <p>Tələbələrin dərs cədvəllərinə uyğun iş qrafikləri yaradın</p>
+                        </div>
+                        <div class="service-item">
+                            <i class="fas fa-chart-line"></i>
+                            <h3>Analitika və hesabatlar</h3>
+                            <p>Vakansiyalarınızın performansını və namizəd statistikalarını izləyin</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Əlaqə</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Bakı şəh., 28 May küç. 5</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+994 50 123 45 67</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@studentwork.az</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Ad, Soyad" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Mesajınız" required></textarea>
+                    </div>
+                    <button class="btn btn-primary">Göndər</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-header">
+                <h2>Qeydiyyat</h2>
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-form="student-form">Tələbə</button>
+                    <button class="tab-btn" data-form="company-form">Şirkət</button>
+                </div>
+            </div>
+
+            <form id="student-form" class="registration-form active">
+                <h3>Tələbə qeydiyyatı</h3>
+                
+                <div class="form-section">
+                    <h4>Şəxsi məlumatlar</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="student-name">Ad və Soyad</label>
+                            <input type="text" id="student-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="student-gender">Cins</label>
+                            <select id="student-gender" required>
+                                <option value="">Seçin</option>
+                                <option value="male">Kişi</option>
+                                <option value="female">Qadın</option>
+                                <option value="other">Digər</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="student-birthdate">Doğum tarixi</label>
+                        <input type="date" id="student-birthdate" required>
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <h4>Təhsil məlumatları</h4>
+                    <div class="form-group">
+                        <label for="student-university">Universitet</label>
+                        <select id="student-university" required>
+                            <option value="">Seçin</option>
+                            <option value="bdu">Bakı Dövlət Universiteti</option>
+                            <option value="adu">Azərbaycan Dövlət Universiteti</option>
+                            <option value="atu">Azərbaycan Texniki Universiteti</option>
+                            <option value="unec">Azərbaycan Dövlət İqtisad Universiteti</option>
+                            <option value="ada">ADA Universiteti</option>
+                            <option value="bmu">Bakı Mühəndislik Universiteti</option>
+                            <option value="other">Digər</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="student-faculty">Fakültə</label>
+                            <input type="text" id="student-faculty" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="student-major">İxtisas</label>
+                            <input type="text" id="student-major" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="student-year">Təhsil ili</label>
+                            <select id="student-year" required>
+                                <option value="">Seçin</option>
+                                <option value="1">1-ci kurs</option>
+                                <option value="2">2-ci kurs</option>
+                                <option value="3">3-cü kurs</option>
+                                <option value="4">4-cü kurs</option>
+                                <option value="5">5-ci kurs</option>
+                                <option value="master">Magistr</option>
+                                <option value="phd">Doktorant</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="student-edu-form">Təhsil forması</label>
+                            <select id="student-edu-form" required>
+                                <option value="">Seçin</option>
+                                <option value="full">Əyani</option>
+                                <option value="part">Qiyabi</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Dərs günləri və saatları</label>
+                        <div class="schedule-picker">
+                            <div class="days-selector">
+                                <div class="day-item">
+                                    <input type="checkbox" id="day-mon" class="day-checkbox">
+                                    <label for="day-mon">B.e</label>
+                                </div>
+                                <div class="day-item">
+                                    <input type="checkbox" id="day-tue" class="day-checkbox">
+                                    <label for="day-tue">Ç.a</label>
+                                </div>
+                                <div class="day-item">
+                                    <input type="checkbox" id="day-wed" class="day-checkbox">
+                                    <label for="day-wed">Ç</label>
+                                </div>
+                                <div class="day-item">
+                                    <input type="checkbox" id="day-thu" class="day-checkbox">
+                                    <label for="day-thu">C.a</label>
+                                </div>
+                                <div class="day-item">
+                                    <input type="checkbox" id="day-fri" class="day-checkbox">
+                                    <label for="day-fri">C</label>
+                                </div>
+                                <div class="day-item">
+                                    <input type="checkbox" id="day-sat" class="day-checkbox">
+                                    <label for="day-sat">Ş</label>
+                                </div>
+                                <div class="day-item">
+                                    <input type="checkbox" id="day-sun" class="day-checkbox">
+                                    <label for="day-sun">B</label>
+                                </div>
+                            </div>
+                            <div class="hours-selector">
+                                <div class="time-range">
+                                    <label for="time-start">Başlanğıc:</label>
+                                    <input type="time" id="time-start">
+                                    <label for="time-end">Bitmə:</label>
+                                    <input type="time" id="time-end">
+                                </div>
+                                <button type="button" id="add-schedule" class="btn btn-sm">Əlavə et</button>
+                            </div>
+                            <div id="schedule-list" class="schedule-list">
+                                <div class="schedule-item">
+                                    <span>B.e, Ç.a: 09:00 - 13:00</span>
+                                    <button type="button" class="remove-btn">×</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <h4>Əlaqə məlumatları</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="student-phone">Telefon nömrəsi</label>
+                            <input type="tel" id="student-phone" placeholder="+994 50 123 45 67" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="student-email">Email ünvanı</label>
+                            <input type="email" id="student-email" required>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <h4>İşə hazırlıq məlumatları</h4>
+                    <div class="form-group">
+                        <label>İşləmək istədiyi sahələr</label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="job-it" name="job-sectors">
+                                <label for="job-it">IT</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="job-design" name="job-sectors">
+                                <label for="job-design">Dizayn</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="job-marketing" name="job-sectors">
+                                <label for="job-marketing">Marketinq</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="job-finance" name="job-sectors">
+                                <label for="job-finance">Maliyyə</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="job-sales" name="job-sectors">
+                                <label for="job-sales">Satış</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="job-admin" name="job-sectors">
+                                <label for="job-admin">İnzibati</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="job-shift">İş növbəsi</label>
+                            <select id="job-shift">
+                                <option value="">Seçin</option>
+                                <option value="morning">Səhər</option>
+                                <option value="afternoon">Günorta</option>
+                                <option value="evening">Axşam</option>
+                                <option value="flexible">Çevik</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>İş üçün uyğun vaxt aralığı</label>
+                            <div class="time-range">
+                                <input type="time" id="job-time-start">
+                                <span>-</span>
+                                <input type="time" id="job-time-end">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="student-cv">CV yüklə</label>
+                            <input type="file" id="student-cv" accept=".pdf,.doc,.docx">
+                        </div>
+                        <div class="form-group">
+                            <label for="student-linkedin">LinkedIn və ya portfolio linki</label>
+                            <input type="url" id="student-linkedin" placeholder="https://linkedin.com/in/username">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <h4>Hesab məlumatları</h4>
+                    <div class="form-group">
+                        <label for="student-username">İstifadəçi adı (optional)</label>
+                        <input type="text" id="student-username">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="student-password">Şifrə</label>
+                            <input type="password" id="student-password" required>
+                            <div class="password-strength">
+                                <div class="strength-bar">
+                                    <div class="strength-level" style="width: 0%"></div>
+                                </div>
+                                <span class="strength-text">Çox zəif</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="student-password-confirm">Şifrəni təkrar daxil edin</label>
+                            <input type="password" id="student-password-confirm" required>
+                        </div>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="student-terms" required>
+                            <label for="student-terms">Qaydalar və şərtlərlə razıyam</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="button" class="btn btn-outline">Ləğv et</button>
+                    <button type="submit" class="btn btn-primary">Qeydiyyatdan keç</button>
+                </div>
+            </form>
+
+            <form id="company-form" class="registration-form">
+                <h3>Şirkət qeydiyyatı</h3>
+                
+                <div class="form-section">
+                    <h4>Əsas məlumatlar</h4>
+                    <div class="form-group">
+                        <label for="company-name">Şirkət adı</label>
+                        <input type="text" id="company-name" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="company-type">Şirkət tipi</label>
+                            <select id="company-type" required>
+                                <option value="">Seçin</option>
+                                <option value="it">IT</option>
+                                <option value="finance">Maliyyə</option>
+                                <option value="marketing">Marketinq</option>
+                                <option value="design">Dizayn</option>
+                                <option value="sales">Satış</option>
+                                <option value="education">Təhsil</option>
+                                <option value="other">Digər</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="company-voen">VÖEN (optional)</label>
+                            <input type="text" id="company-voen">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="company-founded">Təsis ili</label>
+                        <input type="number" id="company-founded" min="1900" max="2025" placeholder="2025">
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <h4>Əlaqə məlumatları</h4>
+                    <div class="form-group">
+                        <label for="company-contact-person">Əlaqəli şəxs adı</label>
+                        <input type="text" id="company-contact-person" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="company-phone">Əlaqə nömrəsi</label>
+                            <input type="tel" id="company-phone" placeholder="+994 50 123 45 67" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company-email">Email ünvanı</label>
+                            <input type="email" id="company-email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="company-address">Şirkət ünvanı</label>
+                        <input type="text" id="company-address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company-website">Şirkət veb sayt linki (optional)</label>
+                        <input type="url" id="company-website" placeholder="https://company.com">
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <h4>İş təklifləri ilə əlaqəli</h4>
+                    <div class="form-group">
+                        <label>Hal-hazırda tələb olunan sahələr</label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="job-dev" name="job-positions">
+                                <label for="job-dev">Developer</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="job-designer" name="job-positions">
+                                <label for="job-designer">Dizayner</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="job-marketer" name="job-positions">
+                                <label for="job-marketer">Marketoloq</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="job-accountant" name="job-positions">
+                                <label for="job-accountant">Mühasib</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="job-sales-person" name="job-positions">
+                                <label for="job-sales-person">Satış üzrə mütəxəssis</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="job-company-shift">İş növbəsi</label>
+                            <select id="job-company-shift">
+                                <option value="">Seçin</option>
+                                <option value="morning">Səhər</option>
+                                <option value="afternoon">Günorta</option>
+                                <option value="evening">Axşam</option>
+                                <option value="flexible">Çevik</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>İş saatları</label>
+                            <div class="time-range">
+                                <input type="time" id="job-company-time-start">
+                                <span>-</span>
+                                <input type="time" id="job-company-time-end">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="job-duration">İş müddəti</label>
+                            <select id="job-duration">
+                                <option value="">Seçin</option>
+                                <option value="short">Qısamüddətli</option>
+                                <option value="long">Uzunmüddətli</option>
+                                <option value="internship">Təcrübə</option>
+                                <option value="project">Layihə əsaslı</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="job-salary">Əmək haqqı (optional)</label>
+                            <input type="text" id="job-salary" placeholder="300-500 AZN">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <h4>Tələblər</h4>
+                    <div class="form-group">
+                        <label for="job-skills">Tələb olunacaq biliklər</label>
+                        <textarea id="job-skills" placeholder="JavaScript, HTML, CSS, React və s."></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="job-experience">Təcrübə səviyyəsi</label>
+                            <select id="job-experience">
+                                <option value="">Seçin</option>
+                                <option value="student">Tələbə</option>
+                                <option value="graduate">Yeni məzun</option>
+                                <option value="experienced">Təcrübəli</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="job-min-course">Ən az tələb olunan kurs</label>
+                            <select id="job-min-course">
+                                <option value="">Seçin</option>
+                                <option value="1">1-ci kurs</option>
+                                <option value="2">2-ci kurs</option>
+                                <option value="3">3-cü kurs</option>
+                                <option value="4">4-cü kurs</option>
+                                <option value="any">Fərq etməz</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <h4>Hesab məlumatları</h4>
+                    <div class="form-group">
+                        <label for="company-username">İstifadəçi adı</label>
+                        <input type="text" id="company-username" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="company-password">Şifrə</label>
+                            <input type="password" id="company-password" required>
+                            <div class="password-strength">
+                                <div class="strength-bar">
+                                    <div class="strength-level" style="width: 0%"></div>
+                                </div>
+                                <span class="strength-text">Çox zəif</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="company-password-confirm">Şifrəni təkrar daxil edin</label>
+                            <input type="password" id="company-password-confirm" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="captcha-container">
+                            <div class="captcha-image">
+                                <img src="/api/placeholder/200/80" alt="Captcha">
+                            </div>
+                            <button type="button" class="btn btn-sm captcha-refresh">Yenilə</button>
+                        </div>
+                        <input type="text" id="captcha-input" placeholder="Captcha kodunu daxil edin" required>
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <h4>Əlavə məlumat</h4>
+                    <div class="form-group">
+                        <label for="company-logo">Şirkət loqosunu yüklə</label>
+                        <input type="file" id="company-logo" accept="image/png, image/jpeg">
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="company-terms" required>
+                            <label for="company-terms">Qaydalar və şərtlərlə razıyam</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="button" class="btn btn-outline">Ləğv et</button>
+                    <button type="submit" class="btn btn-primary">Qeydiyyatdan keç</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-header">
+                <h2>Hesaba daxil ol</h2>
+            </div>
+            <form id="login-form" class="login-form">
+                <div class="form-group">
+                    <label for="login-email">Email və ya istifadəçi adı</label>
+                    <input type="text" id="login-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Şifrə</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <div class="form-group checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="remember-me">
+                        <label for="remember-me">Məni xatırla</label>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary btn-full">Daxil ol</button>
+                </div>
+                <div class="form-footer">
+                    <a href="#" class="forgot-password">Şifrəni unutmusan?</a>
+                    <p>Hesabın yoxdur? <a href="#" id="go-to-register">Qeydiyyatdan keç</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>StudentWork</h3>
+                    <p>Tələbələr və şirkətlər üçün əlaqə platforması</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Platformamız</h4>
+                        <ul>
+                            <li><a href="#">Ana səhifə</a></li>
+                            <li><a href="#">Haqqımızda</a></li>
+                            <li><a href="#">Xidmətlər</a></li>
+                            <li><a href="#">Əlaqə</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resurslar</h4>
+                        <ul>
+                            <li><a href="#">Tez-tez soruşulan suallar</a></li>
+                            <li><a href="#">Karyera məsləhətləri</a></li>
+                            <li><a href="#">İş axtarışı qaydaları</a></li>
+                            <li><a href="#">Bloq</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Hüquqi</h4>
+                        <ul>
+                            <li><a href="#">Məxfilik siyasəti</a></li>
+                            <li><a href="#">Qaydalar və şərtlər</a></li>
+                            <li><a href="#">Cookie siyasəti</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 StudentWork. Bütün hüquqlar qorunur.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script11.js"></script>
+</body>
+</html>
