@@ -163,7 +163,7 @@ function updatePasswordStrength(inputElement, percentage, text, color = '') {
     const strengthText = formGroup.querySelector('.strength-text');
 
     if (strengthBar && strengthText) {
-        strengthBar.style.width = percentage + '%';
+        strengthBar.style.width = `${percentage}%`;
         if (color) strengthBar.style.backgroundColor = color;
         strengthText.textContent = text;
     }
