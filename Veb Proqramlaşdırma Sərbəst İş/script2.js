@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (!errorMessage || !errorMessage.classList.contains('error-message')) {
                     errorMessage = document.createElement('span');
                     errorMessage.className = 'error-message';
-                    errorMessage.textContent = 'DÃ¼zgÃ¼n email formatÄ± daxil edin.';
+                    errorMessage.textContent = 'Düzgün email formatı daxil edin.';
                     this.parentNode.insertBefore(errorMessage, this.nextSibling);
                 }
             } else {
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (!errorMessage || !errorMessage.classList.contains('error-message')) {
                     errorMessage = document.createElement('span');
                     errorMessage.className = 'error-message';
-                    errorMessage.textContent = 'DÃ¼zgÃ¼n telefon formatÄ± daxil edin. (mÉs: +994 50 123 45 67)';
+                    errorMessage.textContent = 'Düzgün telefon formatı daxil edin. (məs: +994 50 123 45 67)';
                     this.parentNode.insertBefore(errorMessage, this.nextSibling);
                 }
             } else {
@@ -75,14 +75,14 @@ document.addEventListener('DOMContentLoaded', function() {
                     if (!errorMessage || !errorMessage.classList.contains('error-message')) {
                         errorMessage = document.createElement('span');
                         errorMessage.className = 'error-message';
-                        errorMessage.textContent = 'ÅifrÉlÉr eyni deyil.';
+                        errorMessage.textContent = 'Şifrələr eyni deyil.';
                         this.parentNode.insertBefore(errorMessage, this.nextSibling);
                     }
                 } else {
                     this.classList.remove('invalid');
                     const errorMessage = this.nextElementSibling;
                     if (errorMessage && errorMessage.classList.contains('error-message')) {
-errorMessage.remove();
+                        errorMessage.remove();
                     }
                 }
             });
@@ -103,7 +103,7 @@ function setupPasswordStrength() {
                 let strength = 0;
 
                 if (password.length === 0) {
-                    updatePasswordStrength(this, 0, 'Ãox zÉif');
+                    updatePasswordStrength(this, 0, 'Çox zəif');
                     return;
                 }
 
@@ -119,12 +119,12 @@ function setupPasswordStrength() {
 
                 switch (strength) {
                     case 1:
-                        strengthText = 'Ãox zÉif';
+                        strengthText = 'Çox zəif';
                         strengthColor = '#f43f5e';
                         strengthPercentage = 20;
                         break;
                     case 2:
-                        strengthText = 'ZÉif';
+                        strengthText = 'Zəif';
                         strengthColor = '#fb923c';
                         strengthPercentage = 40;
                         break;
@@ -134,17 +134,17 @@ function setupPasswordStrength() {
                         strengthPercentage = 60;
                         break;
                     case 4:
-                        strengthText = 'GÃ¼clÃ¼';
+                        strengthText = 'Güclü';
                         strengthColor = '#84cc16';
                         strengthPercentage = 80;
                         break;
                     case 5:
-                        strengthText = 'Ãox gÃ¼clÃ¼';
+                        strengthText = 'Çox güclü';
                         strengthColor = '#22c55e';
                         strengthPercentage = 100;
                         break;
                     default:
-                        strengthText = 'Ãox zÉif';
+                        strengthText = 'Çox zəif';
                         strengthColor = '#f43f5e';
                         strengthPercentage = 20;
                 }
@@ -174,14 +174,14 @@ function setupRegistrationLinks() {
     forms.forEach(function(form) {
         form.addEventListener('submit', function(e) {
             e.preventDefault();
-            alert('Form tÉsdiqlÉndi! Real tÉtbiqdÉ mÉlumatlar gÃ¶ndÉrilÉcÉk.');
+            alert('Form təsdiqləndi! Real tətbiqdə məlumatlar göndəriləcək.');
         });
     });
 
     const captchaRefresh = document.querySelector('.captcha-refresh');
     if (captchaRefresh) {
         captchaRefresh.addEventListener('click', function() {
-            alert('Captcha yenilÉndi!');
+            alert('Captcha yeniləndi!');
         });
     }
 }
@@ -192,14 +192,14 @@ function validateEmail(email) {
 }
 
 function validatePhone(phone) {
-    const re = /^\+994\s?([50|51|55|70|77|99])\s?(\d{3})[\s-]?(\d{2})[\s-]?(\d{2})$/;
+    const re = /^\+994\s?(50|51|55|70|77|99)\s?(\d{3})[\s-]?(\d{2})[\s-]?(\d{2})$/;
     return re.test(String(phone));
 }
 
 window.addEventListener('scroll', function() {
     const header = document.querySelector('.header');
     if (header) {
-if (window.scrollY > 50) {
+        if (window.scrollY > 50) {
             header.classList.add('scrolled');
         } else {
             header.classList.remove('scrolled');
